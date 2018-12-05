@@ -5,6 +5,6 @@ branches:
   only:
   - master
 script:
-  - docker build --pull -t "bsycorp/system-tools:1.0.$TRAVIS_BUILD_NUMBER" -t "bsycorp/system-tools:latest" .
+  - DOCKER_CONTENT_TRUST=1 docker build --pull -t "bsycorp/system-tools:1.0.$TRAVIS_BUILD_NUMBER" -t "bsycorp/system-tools:latest" .
   - docker login -u $DOCKERUSER -p $DOCKERPASS
   - docker push bsycorp/system-tools
