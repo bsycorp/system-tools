@@ -6,4 +6,4 @@ RUN install_packages \
     tree dnsutils tcpdump less groff unzip zip \
     python-pip python-setuptools
 
-RUN install_packages conntrack
+RUN install_packages conntrack nc
