@@ -7,4 +7,4 @@ RUN install_packages \
     python-pip python-setuptools
 
 RUN install_packages conntrack netcat iproute2 net-tools \
-    procps iptables iputils-ping strace
+    procps iptables iputils-ping strace iperf
